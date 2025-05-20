@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kiira</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Kiira 😘</h1>
+  </header>
+
+  <!-- Interactive Button -->
+  <section>
+    <h2>1. Kiira for Business</h2>
+    <button id="magic-btn">Click me to change.</button>
+  </section>
+
+  <!-- Image Gallery / Slideshow -->
+  <section>
+    <h2>2. Image Gallery</h2>
+    <div class="slideshow">
+      <img id="slide-img" src="https://picsum.photos/id/1015/600/400" alt="Slideshow Image" />
+      <div class="slide-controls">
+        <button id="prev-slide">&lt; Prev</button>
+        <button id="next-slide">Next &gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accordion Tabs -->
+  <section>
+    <h2>3. Accordion</h2>
+    <div class="accordion">
+      <button class="accordion-btn">Section 1</button>
+      <div class="accordion-content">
+        <p>This is the content for section 1.</p>
+      </div>
+
+      <button class="accordion-btn">Section 2</button>
+      <div class="accordion-content">
+        <p>This is the content for section 2.</p>
+      </div>
+
+      <button class="accordion-btn">Section 3</button>
+      <div class="accordion-content">
+        <p>This is the content for section 3.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Validation -->
+  <section>
+    <h2>4. Form Validation</h2>
+    <form id="signup-form" novalidate>
+      <label for="email">Email: *</label>
+      <input type="email" id="email" name="email" required />
+      <small class="feedback" id="email-feedback"></small>
+
+      <label for="password">Password: * (min 8 characters)</label>
+      <input type="password" id="password" name="password" required minlength="8" />
+      <small class="feedback" id="password-feedback"></small>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Made with 💻 and ☕ by Joe</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
